@@ -1,0 +1,22 @@
+{
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "types": ["react", "react-dom", "three"],
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "target": "ES2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
